@@ -3,6 +3,8 @@
 <head>
   <title>RESONANCIA</title>
   <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Agregamos la biblioteca Font Awesome -->
+
   <style>
     body {
       background-image: url("cartas/14.jpg");
@@ -11,9 +13,12 @@
       padding: 0;
       font-family: Verdana, sans-serif;
     }
-    p {padding-right: 50px;
+    
+    p {
+      padding-right: 50px;
       padding-left: 50px;
-      }
+      font-size: 18px;
+    }
 
     .navbar {
       background-color: #78306f;
@@ -56,26 +61,56 @@
       margin-top: 80px;
       text-align: center;
       color: #fff;
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 50px;
+      margin-right: 50px;
     }
     
     .video-container {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
+      margin-top: 20px;
     }
 
     iframe {
       width: 100%;
-      max-width: 800px;
-      height: 360px;
-      margin-top: 20px;
+      max-width: 1000px;
+      height: 480px;
+    }
+
+    .feedback {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .feedback-text {
+      font-size: 24px;
+    }
+
+    .comment-button {
+      background-color: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .comment-button:hover {
+      background-color: purple;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <nav class="navbar">
-    <div class="logo"> <a href="statement.html"> <img src="imagenes/logo.png" alt="Logo"></div>
+    <div class="logo"> <a href="statement.html"> <img src="imagenes/logo.png" alt="Logo"></a></div>
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="cartas.html">Cartas</a></li>
@@ -84,13 +119,18 @@
   </nav>
 
   <div class="content">
-    <h1 style="font-size: 36px;">RESONANCIA</h1>
+    <h1 style="font-size: 48px;">RESONANCIA</h1>
     <p style="text-align: justify;">El tema en conjunto del proyecto es la importancia de la empatía en las relaciones humanas entre los alumnos del quinto grado. En cuanto al proyecto audiovisual, consiste en llevar a cabo con los integrantes de nuestro salón, una dinámica en la que tomamos como referente "Cartas a Distancia", documental de Juan Carlos Rulfo.</p>
     <p style="text-align: justify;">Es en dicho documental de Juan Carlos Rulfo en el que encontramos un registro videográfico durante tiempos de pandemia en un hospital, recoge los testimonios de los enfermos y sus familias. Crea una reflexión sobre los procesos de comunicación que hicieron posible que los individuos afectados por la enfermedad pudieran contar su experiencia.</p>
     <p style="text-align: justify;">Las medidas sanitarias destinadas a disminuir el número de contagios implicaron un aislamiento físico al que no estábamos acostumbrados, y han significado un importante deterioro en nuestra salud mental, de estudiantes y jóvenes. Sin embargo, estamos conscientes de que en momentos de crisis, las personas tendemos a buscar más contacto con otros.</p>
     <p style="text-align: justify;">Es en momentos de incertidumbre cuando mantener y fortalecer los vínculos sociales nos brinda efectos positivos en la salud. La empatía es crucial para resolver conflictos y problemas interpersonales, ya que al comprender las emociones y necesidades de otros, nos permite mantener relaciones saludables.</p>
     <div class="video-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/M-vAehPuXL0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <iframe width="800" height="450" src="https://www.youtube.com/embed/M-vAehPuXL0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <div class="feedback">
+      <p class="feedback-text">Tu opinión es importante</p>
+      <button class="comment-button" onclick="window.location.href = 'otra_pagina.html';"> <i class="fas fa-comment-dots"> </i>Déjanos un comentario </button>
     </div>
   </div>
 </body>
